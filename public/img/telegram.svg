@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <linearGradient id="linear-gradient" x2=".004" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#37aee2"/>
+            <stop offset="1" stop-color="#1e96c8"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_10" data-name="Group 10" transform="translate(-1226 -527)">
+        <g id="Group_9" data-name="Group 9" transform="translate(-5)">
+            <rect id="Rectangle_13" width="40" height="40" fill="#1e96c8" data-name="Rectangle 13" opacity="0.16" rx="4" transform="translate(1231 527)"/>
+        </g>
+        <g id="telegram-logo_logotyp.us" data-name="telegram-logo@logotyp.us" transform="translate(1234.821 535.821)">
+            <circle id="Ellipse_9" cx="11" cy="11" r="11" fill="url(#linear-gradient)" data-name="Ellipse 9" transform="translate(.179 .179)"/>
+            <path id="Path_7" fill="#fff" d="M53.468 96.228c1.307-.72 2.766-1.321 4.129-1.924 2.345-.989 4.7-1.961 7.077-2.866.463-.154 1.294-.3 1.375.381-.045.971-.228 1.935-.354 2.9-.32 2.122-.689 4.236-1.049 6.351a1 1 0 0 1-1.571.618c-1.357-.917-2.724-1.824-4.064-2.762-.439-.446-.032-1.086.36-1.4 1.118-1.1 2.3-2.037 3.362-3.2.286-.69-.558-.109-.837.07-1.53 1.054-3.023 2.173-4.636 3.1a3.364 3.364 0 0 1-2.608-.187c-.738-.306-1.821-.614-1.184-1.08z" data-name="Path 7" transform="translate(-49.304 -84.502)"/>
+        </g>
+    </g>
+</svg>

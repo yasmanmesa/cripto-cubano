@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cripto en Cuba</title>
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <style>
+    body{
+      background-color: #0c0f15;
+    }
+
+    .component-2-1 {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+
+    .component-3-1 {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+
+    .component-3-9 {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .group-8 {
+      width: 300px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .group-10 {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+
+    .Cubanos-que-aceptan {
+      width: auto;
+      margin:0 auto;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: center;
+      color: #e3e3e3;
+    }
+
+    .crypto {
+      width: 234px;
+      height: 34px;
+      margin:0 auto;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      text-align: center;
+      color: #d99015;
+    }
+
+    .text{
+      width: 42px;
+      height: 23px;
+      margin: auto;
+      font-family: 'Proxima Nova', sans-serif;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .text-crypto {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .text-header {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .rectangle {
+      height: 60px;
+    }
+
+    .rectangle-marked {
+      background-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .fixed-header, .fixed-footer{
+      width: 100%;
+      position: fixed;
+      background-color: #0c0f15;
+      padding: 10px 0;
+    }
+    .fixed-header{
+      top: 0;
+      background-color: #0c0f15;
+      height: 200px;
+    }
+    .fixed-footer{
+      bottom: 0;
+      height: 148px;
+    }
+    div.button-footer {
+      background: linear-gradient(to bottom, #ffc608 0%, #bb7c12 20%, #462d04 80%);
+      margin-top: 48px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 52px;
+      line-height: 52px;
+      width: 250px;
+      text-align: center;
+      border-radius: 8px;
+      color: #ffe7bf;
+      cursor: pointer;
+    }
+
+    a {
+      width: 250px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .row-crypto {
+      display: flex;
+    }
+    .container {
+      padding-top: 75px;
+      min-width: 300px;
+      max-width: 1024px;
+    }
+    .column-1 {
+      flex: 0 0 180px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .column-2 {
+      flex: 0 0 170px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .column-3 {
+      flex: 0 0 200px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .column-4 {
+      flex: 0 0 150px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .column-5 {
+      flex: 0 0 245px;
+      margin: auto 15px auto 0;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <div class="container">
+
+    <div class="row rectangle" style="height: 148px;"></div>
+
+    <div class="rectangle row-crypto">
+      <div class="text text-header column-1">
+        Crypto
+      </div>
+      <div class="text text-header column-2">
+        Nombre
+      </div>
+      <div class="text text-header column-3">
+        Servicio
+      </div>
+      <div class="text text-header column-4">
+        Disponible en
+      </div>
+      <div class="text text-header column-5">
+        Contacto
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC  ETH  LTC y otras
+      </div>
+      <div class="text column-2">
+        Burger Like
+      </div>
+      <div class="text column-3">
+        Hamburguesera con env&iacute;o a domicilio
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=20.017433,-75.808672" target="_blank">
+          <p title="General Miniet #42 e/ 5ta Y 10 Reparto 30 de noviembre">Santiago de Cuba</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5353088219" title="+53 5 30-88-219" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5359322553" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        QvaShop
+      </div>
+      <div class="text column-3">
+        Tienda online
+      </div>
+      <div class="text column-4">
+        La Habana
+      </div>
+      <div class="column-5">
+        <a href="tel:+5355149081" title="+53 5 51-49-081" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5355149081" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/QvaShop" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://www.qvashop.com/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        USDC
+      </div>
+      <div class="text column-2">
+        Secret Dreams Photography
+      </div>
+      <div class="text column-3">
+        Estudio Fotogr&aacute;fico
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=23.165463,-82.299724" target="_blank">
+          <p title="Calle H #1F11 altos, e/ 24 y 25, Cojimar, Habana del Este">La Habana</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5351160988" title="+53 5 11-60-988" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5351160988" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/eli_rodoliv" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC  ETH y otras
+      </div>
+      <div class="text column-2">
+        NeoAudiovisual
+      </div>
+      <div class="text column-3">
+        Venta De Audiovisuales e Impresi&oacute;n
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=23.139251,-82.401088" target="_blank">
+          <p title="Paseo, #59 e/ 3ra y 5ta, Vedado">La Habana</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="https://wa.me/+14254191473" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/NeoAudiovisual" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        CluzStudio
+      </div>
+      <div class="text column-3">
+        Dise&ntilde;o web y hosting
+      </div>
+      <div class="text column-4">
+        Cuba
+      </div>
+      <div class="column-5">
+        <a href="tel:+5354276314" title="+53 5 42-76-314" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5354276314" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/ReneMB" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://www.cluzstudio.com/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        USDC
+      </div>
+      <div class="text column-2">
+        Maykel's Pizza
+      </div>
+      <div class="text column-3">
+        Pizza a domicilio
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=20.880687, -76.235617" target="_blank">
+          <p title="Cerca de F&aacute;brica de cigarro L&aacute;zaro Pe&ntilde;a, frente a 2da Iglesia Bautista, Holgu&iacute;n">Holgu&iacute;n - Ciudad de Holgu&iacute;n</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5358226088" title="+53 5 82-26-088" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://chat.whatsapp.com/HCzKRnLVxEaCLm7GWwBqVP" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/maykel_pizza" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC  ETH  USDC y otras
+      </div>
+      <div class="text column-2">
+        Alain Carlos
+      </div>
+      <div class="text column-3">
+        Alimentos y Aseo
+      </div>
+      <div class="text column-4">
+        La Habana
+      </div>
+      <div class="column-5">
+        <a href="tel:+5356043192" title="+53 5 60-43-192" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5356043192" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/Kalim75" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC  ETH  USDC y otras
+      </div>
+      <div class="text column-2">
+        Alain Carlos
+      </div>
+      <div class="text column-3">
+        Renta de apartamento
+      </div>
+      <div class="text column-4">
+        La Habana
+      </div>
+      <div class="column-5">
+        <a href="tel:+5356043192" title="+53 5 60-43-192" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5356043192" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/Kalim75" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        R&R Games
+      </div>
+      <div class="text column-3">
+        Venta de Videojuegos de PC
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=20.023078,-75.817969" target="_blank">
+          <p title="Escario # 202 entre Pedrera y San Miguel">Santiago de Cuba</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5353483690" title="+53 5 34-83-690" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5353483690" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/RR_Final" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC  ETH  LTC y USDT
+      </div>
+      <div class="text column-2">
+        Millenium
+      </div>
+      <div class="text column-3">
+        Soluciones M&oacute;viles e Impresi&oacute;n
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=20.0350,-75.8098" target="_blank">
+          <p title="Calle E #400 A Reparto Sueño">Santiago de Cuba</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5322645100" title="+53 5 34-83-690" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5353086973" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/milleniumstgo" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC  ETH  USDC y otras
+      </div>
+      <div class="text column-2">
+        Ciro Cuba
+      </div>
+      <div class="text column-3">
+        Fotos y Videos de eventos
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=23.171814,-82.253569" target="_blank">
+          <p title="Edificio sp 23, apto 14 ,Micro 10, Alamar, Habana del este">La Habana</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5352614654" title="+53 5 26-14-654" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5352614654" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/ccuba78" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC  ETH
+      </div>
+      <div class="text column-2">
+        Antonio Amor Fontela
+      </div>
+      <div class="text column-3">
+        Electricista - El&eacute;ctrico industrial
+      </div>
+      <div class="text column-4">
+        <a href="https://maps.google.com/?q=23.090084,-82.364438" target="_blank">
+          <p title="Calle Carmen, edif 12, apto 2, e/ San L&acute;zaro y 10 de octubre, La V&iacute;bora">La Habana</p>
+        </a>
+      </div>
+      <div class="column-5">
+        <a href="tel:+5376982920" title="+53 7 69-82-920" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5353615627" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/DominusOne" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        Shaokan' Shop
+      </div>
+      <div class="text column-3">
+        Productos de belleza y electr&oacute;nicos
+      </div>
+      <div class="text column-4">
+        Sancti Spiritus - Trinidad
+      </div>
+      <div class="column-5">
+        <a href="tel:+5352599694" title="+53 5 25-99-694" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5352599694" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/zero_cool93" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        Shaokan' Shop
+      </div>
+      <div class="text column-3">
+        Joyeria de plata
+      </div>
+      <div class="text column-4">
+        Trinidad - Sta Clara - Cienfuegos
+      </div>
+      <div class="column-5">
+        <a href="tel:+5352599694" title="+53 5 25-99-694" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5352599694" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+        <a href="https://t.me/zero_cool93" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        BayamoToy
+      </div>
+      <div class="text column-3">
+        Juguetes
+      </div>
+      <div class="text column-4">
+        Granma - Bayamo
+      </div>
+      <div class="column-5">
+        <a href="tel:+5358042001" title="+53 5 80-42-001" target="_blank">
+          <img src="img/component-2-1.svg" class="component-2-1">
+        </a>
+        <a href="https://wa.me/+5358042001" target="_blank">
+          <img src="img/component-3-1.svg" class="component-3-1">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC  ETH y otras
+      </div>
+      <div class="text column-2">
+        CubaXchange
+      </div>
+      <div class="text column-3">
+        Exchange
+      </div>
+      <div class="text column-4">
+        Cuba
+      </div>
+      <div class="column-5">
+        <a href="https://t.me/CubaExchange" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://cubaxchange.com/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        MarketBTC
+      </div>
+      <div class="text column-3">
+        Exchange
+      </div>
+      <div class="text column-4">
+        Cuba
+      </div>
+      <div class="column-5">
+        <a href="https://t.me/marketbtc_grupo" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://marketbtc.net/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle">
+      <div class="text text-crypto column-1">
+        BTC
+      </div>
+      <div class="text column-2">
+        QBita
+      </div>
+      <div class="text column-3">
+        Exchange
+      </div>
+      <div class="text column-4">
+        Cuba
+      </div>
+      <div class="column-5">
+        <a href="https://t.me/qbitacuba" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://qbita.org/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle rectangle-marked">
+      <div class="text text-crypto column-1">
+        BTC  ETH  BCH
+      </div>
+      <div class="text column-2">
+        BuyCryptoCuba
+      </div>
+      <div class="text column-3">
+        Exchange
+      </div>
+      <div class="text column-4">
+        Cuba
+      </div>
+      <div class="column-5">
+        <a href="https://t.me/BuyCryptoCuba" target="_blank">
+          <img src="img/telegram.svg" class="group-10">
+        </a>
+        <a href="https://www.buycryptocuba.com/" target="_blank">
+          <img src="img/component-3-9.svg" class="component-3-9">
+        </a>
+      </div>
+    </div>
+
+    <div class="row-crypto rectangle" style="height: 148px;"></div>
+
+  </div>
+</div>
+
+<div class="fixed-header text-center">
+  <img src="img/group-8.png" srcset="img/group-8@2x.png 2x, img/group-8@3x.png 3x" class="group-8">
+  <div class="Cubanos-que-aceptan">Cubanos que aceptan</div>
+  <div class="crypto">CRIPTOMONEDAS</div>
+</div>
+<div class="fixed-footer" >
+  <a href="https://t.me/cripto_cubano" target="_blank">
+    <div class="button-footer">
+      &iquest;Quieres aparecer en la lista&#63;
+    </div>
+  </a>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+</body>
+</html>
